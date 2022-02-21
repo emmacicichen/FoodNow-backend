@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-//you can also add cache, so you don't need to get data from database, cache can set expiration time
+
 @Service
 public class MenuInfoService {
 
