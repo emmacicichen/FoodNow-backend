@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 @Controller
-public class ItemOrderController {//add an menuitem to customer's cart
+public class ItemOrderController {
     @Autowired
     private ItemOrderService itemOrderService;
 
