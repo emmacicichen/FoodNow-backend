@@ -15,7 +15,6 @@ public class SignInController {
 
     private final ObjectMapper objectMapper = new ObjectMapper();
 
-    // we only process the failed login request here, if login successfully, it will automatically redirect to home page
     @RequestMapping("/login")
     public void login(@RequestParam(value = "error") String error, HttpServletResponse response) throws IOException {
         response.setStatus(HttpStatus.BAD_REQUEST.value());
