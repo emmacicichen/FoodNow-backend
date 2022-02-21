@@ -16,10 +16,7 @@ public class Cart implements Serializable {
     private double totalPrice;
 
     @OneToMany(mappedBy = "cart", cascade = CascadeType.ALL, fetch=FetchType.EAGER)
-    private List<OrderItem> orderItemList;//这一方mappedBy，FK在另一方，另一方创建col
-    //后面代码每次加一个oderItem的时候，不会使用一个method来加，而是Hibernate帮你自动关联的，通过FK
-    //就是说当你要返回listoforderitem的时候，在orderitem那个表里他会去找这个cartid一样的 都放会给你
-
+    private List<OrderItem> orderItemList;
 
     public int getId() {
         return id;
