@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public class MenuInfoDao {//1. load restarutant info 2. load menu info
+public class MenuInfoDao {
 
     @Autowired
     private SessionFactory sessionFactory;//inject Hibernate 's session factory
