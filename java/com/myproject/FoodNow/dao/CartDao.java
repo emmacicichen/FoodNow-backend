@@ -36,7 +36,7 @@ public class CartDao {
         }
 
     }
-//2 清空整个购物车
+    
     public void removeAllCartItems(Cart cart) {
         for (OrderItem item : cart.getOrderItemList()) {
             removeCartItem(item.getId());
