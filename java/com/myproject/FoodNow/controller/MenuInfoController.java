@@ -26,7 +26,7 @@ public class MenuInfoController {//load restaurants and corresponding menu infor
 
     @RequestMapping(value="/restaurants", method=RequestMethod.GET)
     @ResponseBody
-    public List<Restaurant> getRestaurants(){//在页面显示所有餐馆儿
+    public List<Restaurant> getRestaurants(){
         return menuInfoService.getRestaurants();
     }
 }
